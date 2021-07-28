@@ -1,7 +1,7 @@
 
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family:'Montserrat';
   color: #444444;
 }
 
@@ -16,7 +16,7 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Montserrat';
 }
 
 /*--------------------------------------------------------------
@@ -91,27 +91,9 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 0 30px;
 }
 
-.header-social-links a {
-  color: #9ba6af;
-  padding-left: 8px;
-  display: inline-block;
-  line-height: 0px;
-  transition: 0.3s;
-}
 
-.header-social-links a i {
-  line-height: 0;
-}
 
-.header-social-links a:hover {
-  color: #34dbbf;
-}
 
-@media (max-width: 768px) {
-  .header-social-links {
-    margin: 0 15px 0 0;
-  }
-}
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -327,7 +309,7 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 60vh;
+  height: 90vh;
   background: url("../img/antoine-giret-7_TSzqJms4w-unsplash.jpg") center center;
   background-size: cover;
   position: relative;
@@ -681,7 +663,7 @@ background-size: cover;
 }
 
 .services .icon-box h4 a {
-  color: #384046;
+  color: #34dbbf;
   transition: 0.3s;
 }
 
@@ -699,222 +681,8 @@ background-size: cover;
   color: #34dbbf;
 }
 
-/*--------------------------------------------------------------
-# Portfolio
---------------------------------------------------------------*/
-.portfolio {
-  padding: 60px 0;
-}
 
-.portfolio #portfolio-flters {
-  padding: 0;
-  margin: 0 0 35px 0;
-  list-style: none;
-  text-align: center;
-}
-
-.portfolio #portfolio-flters li {
-  cursor: pointer;
-  margin: 0 15px 15px 0;
-  display: inline-block;
-  padding: 10px 20px;
-  font-size: 12px;
-  line-height: 20px;
-  color: #444444;
-  border-radius: 4px;
-  text-transform: uppercase;
-  background: #fff;
-  margin-bottom: 5px;
-  transition: all 0.3s ease-in-out;
-}
-
-.portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
-  background: #34dbbf;
-  color: #fff;
-}
-
-.portfolio #portfolio-flters li:last-child {
-  margin-right: 0;
-}
-
-.portfolio .portfolio-wrap {
-  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
-  transition: 0.3s;
-}
-
-.portfolio .portfolio-wrap:hover {
-  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.16);
-}
-
-.portfolio .portfolio-item {
-  position: relative;
-  height: 360px;
-  overflow: hidden;
-}
-
-.portfolio .portfolio-item figure {
-  background: #000;
-  overflow: hidden;
-  height: 240px;
-  position: relative;
-  border-radius: 4px 4px 0 0;
-  margin: 0;
-}
-
-.portfolio .portfolio-item figure:hover img {
-  opacity: 0.4;
-  transition: .4s;
-}
-
-.portfolio .portfolio-item figure .link-preview, .portfolio .portfolio-item figure .link-details {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  line-height: 0;
-  text-align: center;
-  width: 36px;
-  height: 36px;
-  background: #fff;
-  border-radius: 50%;
-  transition: all .2s linear;
-  overflow: hidden;
-  font-size: 20px;
-}
-
-.portfolio .portfolio-item figure .link-preview i, .portfolio .portfolio-item figure .link-details i {
-  color: #384046;
-  line-height: 0;
-}
-
-.portfolio .portfolio-item figure .link-preview:hover, .portfolio .portfolio-item figure .link-details:hover {
-  background: #34dbbf;
-}
-
-.portfolio .portfolio-item figure .link-preview:hover i, .portfolio .portfolio-item figure .link-details:hover i {
-  color: #fff;
-}
-
-.portfolio .portfolio-item figure .link-preview {
-  left: calc(50% - 38px);
-  top: calc(50% - 18px);
-}
-
-.portfolio .portfolio-item figure .link-details {
-  right: calc(50% - 38px);
-  top: calc(50% - 18px);
-}
-
-.portfolio .portfolio-item figure:hover .link-preview {
-  opacity: 1;
-  left: calc(50% - 44px);
-}
-
-.portfolio .portfolio-item figure:hover .link-details {
-  opacity: 1;
-  right: calc(50% - 44px);
-}
-
-.portfolio .portfolio-item .portfolio-info {
-  background: #fff;
-  text-align: center;
-  padding: 30px;
-  height: 90px;
-  border-radius: 0 0 3px 3px;
-}
-
-.portfolio .portfolio-item .portfolio-info h4 {
-  font-size: 18px;
-  line-height: 1px;
-  font-weight: 700;
-  margin-bottom: 18px;
-  padding-bottom: 0;
-}
-
-.portfolio .portfolio-item .portfolio-info h4 a {
-  color: #333;
-}
-
-.portfolio .portfolio-item .portfolio-info h4 a:hover {
-  color: #3498db;
-}
-
-.portfolio .portfolio-item .portfolio-info p {
-  padding: 0;
-  margin: 0;
-  color: #b8b8b8;
-  font-weight: 500;
-  font-size: 14px;
-  text-transform: uppercase;
-}
-
-/*--------------------------------------------------------------
-# Portfolio Details
---------------------------------------------------------------*/
-.portfolio-details {
-  padding-top: 0;
-}
-
-.portfolio-details .portfolio-details-slider img {
-  width: 100%;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination {
-  margin-top: 20px;
-  position: relative;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: #fff;
-  opacity: 1;
-  border: 1px solid #3498db;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #3498db;
-}
-
-.portfolio-details .portfolio-info {
-  padding: 30px;
-  box-shadow: 0px 0 30px rgba(56, 64, 70, 0.08);
-}
-
-.portfolio-details .portfolio-info h3 {
-  font-size: 22px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #eee;
-}
-
-.portfolio-details .portfolio-info ul {
-  list-style: none;
-  padding: 0;
-  font-size: 15px;
-}
-
-.portfolio-details .portfolio-info ul li + li {
-  margin-top: 10px;
-}
-
-.portfolio-details .portfolio-description {
-  padding-top: 30px;
-}
-
-.portfolio-details .portfolio-description h2 {
-  font-size: 26px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-.portfolio-details .portfolio-description p {
-  padding: 0;
-}
-
-/*--------------------------------------------------------------
+/*------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
 .testimonials .testimonial-item {
@@ -930,7 +698,7 @@ background-size: cover;
 .testimonials .testimonial-item .testimonial-img {
   width: 90px;
   border-radius: 50%;
-  border: 4px solid #fff;
+  border: 4px solid #34dbbf;
   margin: 0 auto;
 }
 
@@ -943,12 +711,12 @@ background-size: cover;
 
 .testimonials .testimonial-item h4 {
   font-size: 14px;
-  color: #999;
+  color: #34dbbf;
   margin: 0;
 }
 
 .testimonials .testimonial-item .quote-icon-left, .testimonials .testimonial-item .quote-icon-right {
-  color: #e1f0fa;
+  color: #34dbbf;
   font-size: 26px;
 }
 
@@ -980,11 +748,11 @@ background-size: cover;
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #3498db;
+  border: 1px solid #34dbbf;
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #3498db;
+  background-color: #34dbbf;
 }
 
 /*--------------------------------------------------------------
@@ -996,6 +764,11 @@ background-size: cover;
   box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
   padding: 30px 20px;
   background: #fff;
+  
+}
+#team{
+  align-items: center;
+  justify-content: center;
 }
 
 .team .member img {
@@ -1033,7 +806,7 @@ background-size: cover;
 }
 
 .team .member .social a:hover {
-  color: #3498db;
+  color: #34dbbf;
 }
 
 .team .member .social i {
@@ -1052,7 +825,7 @@ background-size: cover;
 
 .contact .info i {
   font-size: 20px;
-  color: #3498db;
+  color: #34dbbf;
   float: left;
   width: 44px;
   height: 44px;
@@ -1080,7 +853,7 @@ background-size: cover;
 }
 
 .contact .info:hover i {
-  background: #3498db;
+  background: #34dbbf;
   color: #fff;
 }
 
@@ -1119,7 +892,7 @@ background-size: cover;
 .contact .php-email-form .sent-message {
   display: none;
   color: #fff;
-  background: #18d26e;
+  background: #34dbbf;
   text-align: center;
   padding: 15px;
   font-weight: 600;
@@ -1139,7 +912,7 @@ background-size: cover;
   width: 24px;
   height: 24px;
   margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
+  border: 3px solid #34dbbf;
   border-top-color: #eee;
   -webkit-animation: animate-loading 1s linear infinite;
   animation: animate-loading 1s linear infinite;
@@ -1160,7 +933,7 @@ background-size: cover;
 }
 
 .contact .php-email-form button[type="submit"] {
-  background: #3498db;
+  background: #34dbbf;
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -1169,7 +942,7 @@ background-size: cover;
 }
 
 .contact .php-email-form button[type="submit"]:hover {
-  background: #5faee3;
+  background: #34dbbf;
 }
 
 @-webkit-keyframes animate-loading {
@@ -1289,7 +1062,7 @@ background-size: cover;
 
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
-  color: #3498db;
+  color: #34dbbf;
   font-size: 18px;
   line-height: 1;
 }
@@ -1313,56 +1086,9 @@ background-size: cover;
 
 #footer .footer-top .footer-links ul a:hover {
   text-decoration: none;
-  color: #3498db;
+  color: #34dbbf;
 }
 
-#footer .footer-newsletter {
-  font-size: 15px;
-}
-
-#footer .footer-newsletter h4 {
-  font-size: 16px;
-  font-weight: bold;
-  color: #444444;
-  position: relative;
-  padding-bottom: 12px;
-}
-
-#footer .footer-newsletter form {
-  margin-top: 30px;
-  background: #fff;
-  padding: 6px 10px;
-  position: relative;
-  border-radius: 4px;
-  text-align: left;
-  border: 1px solid #b6daf2;
-}
-
-#footer .footer-newsletter form input[type="email"] {
-  border: 0;
-  padding: 4px 8px;
-  width: calc(100% - 100px);
-}
-
-#footer .footer-newsletter form input[type="submit"] {
-  position: absolute;
-  top: 0;
-  right: -2px;
-  bottom: 0;
-  border: 0;
-  background: none;
-  font-size: 16px;
-  padding: 0 20px 2px 20px;
-  background: #3498db;
-  color: #fff;
-  transition: 0.3s;
-  border-radius: 0 4px 4px 0;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-}
-
-#footer .footer-newsletter form input[type="submit"]:hover {
-  background: #57aae1;
-}
 
 #footer .credits {
   padding-top: 5px;
@@ -1373,7 +1099,7 @@ background-size: cover;
 #footer .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #3498db;
+  background: #34dbbf;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -1386,7 +1112,7 @@ background-size: cover;
 }
 
 #footer .social-links a:hover {
-  background: #5faee3;
+  background: #34dbbf;
   color: #fff;
   text-decoration: none;
 }
