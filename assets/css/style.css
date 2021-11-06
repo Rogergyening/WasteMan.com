@@ -769,6 +769,7 @@ background-size: cover;
 #team{
   align-items: center;
   justify-content: center;
+  align-content:center!important;
 }
 
 .team .member img {
